@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">  <!-- different fonts from google -->
+    <link rel="stylesheet" href="style.css"> <!-- links to the css page- which decorates the page--> 
+    <title>Weather App </title>
+</head>
+
+<body>
+
+    <div class="container"> <!-- beginng of the box in the middle-the start of the full map -->
+        <div class="search-box"> <!-- start of the search box --> 
+            <i class="fa-solid fa-location-dot"></i>  <!--photo-->
+             <input type="text" placeholder="ENTER YOUR CITY">
+            <button class="fa-solid fa-magnifying-glass"></button> <!--photo-->
+        </div>
+<!-- end of search box -->
+
+<!--start-->
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Oops! Invalid location :/</p>
+        </div>
+<!--finish-->
+        <div class="weather-box"> <!--second data-->
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div> <!--end second data-->
+
+        <div class="weather-details"><!--outer box start -->
+            <div class="humidity"> <!-- humidy box start-->
+
+                <i class="fa-solid fa-water"></i>
+
+                <div class="text"> <!-- text start-->
+                    <span></span>
+                    <p>Humidity</p>
+
+                </div> <!--  text end -->
+            </div><!-- humiddy box end -->
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div> <!-- outer box end-->
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script> <!-- reference the java -->
+</body>
+
+</html>
